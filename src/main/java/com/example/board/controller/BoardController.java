@@ -1,6 +1,6 @@
 package com.example.board.controller;
 
-import com.example.board.model.Board;
+import com.example.board.domain.Board;
 import com.example.board.service.BoardService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @Tag(name = "Board API", description = "게시판 API")
 @RestController
-@RequestMapping("/api/boards")
+@RequestMapping("/boards")
 public class BoardController {
 
     @Autowired

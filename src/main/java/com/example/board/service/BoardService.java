@@ -1,6 +1,6 @@
 package com.example.board.service;
 
-import com.example.board.model.Board;
+import com.example.board.domain.Board;
 
 import java.util.List;
 
