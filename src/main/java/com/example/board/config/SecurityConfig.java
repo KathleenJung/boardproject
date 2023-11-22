@@ -42,6 +42,7 @@ public class SecurityConfig {
                                 .requestMatchers("/user/admin-only").hasRole("ADMIN")
                                 .requestMatchers("/user/info").hasRole("USER")
                                 .requestMatchers("/user/info/**").hasRole("ADMIN")
+                                .requestMatchers("/weather/**").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .formLogin(AbstractHttpConfigurer::disable).httpBasic(AbstractHttpConfigurer::disable)
